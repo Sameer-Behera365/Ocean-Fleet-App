@@ -25,4 +25,9 @@ public class Vessel {
 
     public String getVesselType() { return vesselType; }
     public void setVesselType(String vesselType) { this.vesselType = vesselType; }
+
+    @Override
+    public String toString() {
+        return vesselId + " | " + vesselName + " | " + vesselType + " | " + averageSpeed + " knots";
+    }
 }
